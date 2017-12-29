@@ -15,7 +15,7 @@
        getinverse = getinverse)
 }
 
-## Function to check if the inverse is already cached and returns the cached value or calculates it 
+## Second Function to check if the inverse is already cached and returns the cached value or calculates it 
 
 
 cacheSolve <- function(x, ...) {
@@ -28,4 +28,5 @@ cacheSolve <- function(x, ...) {
   m <- solve(matrix, ...)
   x$setinverse(m)
   m
+  
 }
